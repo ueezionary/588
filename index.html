@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>588 ПРОЕКТ - Креативная лаборатория</title>
+    <!-- Подключаем твой файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем CSS Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<header class="hero section">
+    <div class="container hero-container">
+        <!-- Левая колонка: Контакты -->
+        <div class="hero-contacts">
+            <div class="contact-item">
+                <img src="images/mail.svg" alt="Mail">
+                <a href="mailto:reklama@project588.ru">reklama@project588.ru</a>
+            </div>
+            <div class="contact-item">
+                <img src="images/phone.svg" alt="Phone">
+                <div>
+                    <a href="tel:+79100081812">+7 (910) 008-18-12</a><br>
+                    <a href="tel:+79268498962">+7 (926) 849-89-62</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Центр: Логотип (Идеально по центру) -->
+        <div class="hero-logo">
+            <img src="images/x1.jpg" alt="588 ПРОЕКТ" id="glitch-logo"> 
+        </div>
+
+        <!-- Правая колонка: Соцсети -->
+        <div class="hero-socials">
+            <a href="https://t.me/proekt_588" target="_blank" class="social-icon"><img src="images/telegram.svg" alt="Telegram"></a> 
+            <a href="https://vk.ru/proekt_588" target="_blank" class="social-icon"><img src="images/vk.svg" alt="VK"></a>
+            <a href="https://max.ru/c/-73628212227436/AZ2gfNruQyw" target="_blank" class="social-icon"><img src="images/max.svg" alt="MAX"></a>
+        </div>
+    </div>
+    
+    <div class="hero-title-wrapper">
+         <h1 class="hero-title">КРЕАТИВНАЯ ЛАБОРАТОРИЯ /<br>ПРОИЗВОДСТВО ПОЛНОГО ЦИКЛА</h1>
+    </div>
+
+<!-- Прыгающая стрелка вниз (нарисована кодом) -->
+    <div class="scroll-down">
+        <a href="#services">
+            <span class="css-arrow"></span>
+        </a>
+    </div>
+
+    <div class="vertical-text">ЛОКАЦИЯ: МОСКВА // ОСН. 2026</div>
+</header>
+
+<!-- Выплывающее мобильное меню -->
+<div class="mobile-menu-popup" id="mobileMenu">
+    <div class="mobile-menu-links">
+        <a href="#services">Услуги</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#tech">Технологии</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+    <div class="mobile-menu-contacts">
+        <a href="tel:+79100081812">+7 (910) 008-18-12</a>
+        <a href="tel:+79268498962">+7 (926) 849-89-62</a>
+        <a href="mailto:reklama@project588.ru" class="mobile-mail">reklama@project588.ru</a>
+        <div class="mobile-menu-socials">
+            <a href="https://t.me/proekt_588" target="_blank"><img src="images/telegram.svg" alt="Telegram"></a>
+            <a href="https://vk.ru/proekt_588" target="_blank"><img src="images/vk.svg" alt="VK"></a>
+            <a href="https://max.ru/c/-73628212227436/AZ2gfNruQyw" target="_blank"><img src="images/max.svg" alt="MAX"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Нижний док-бар -->
+<nav class="dock-bar">
+    <!-- Кнопка бургера (видна только на мобилке) -->
+    <button class="dock-burger" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Ссылки для компьютера -->
+    <a href="#services" class="dock-link">Услуги</a>
+    <a href="#cases" class="dock-link">Кейсы</a>
+    <a href="#tech" class="dock-link">Технологии</a>
+    <a href="#about" class="dock-link">О нас</a>
+    <a href="#contacts" class="dock-link">Контакты</a>
+
+    <!-- Розовая кнопка (видна всегда) -->
+    <a href="#order" class="btn-pink">Заказать мерч</a>
+</nav>
+
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title"><span>01 //</span> НАПРАВЛЕНИЯ</h2>
+        <div class="directions-grid">
+            <!-- 1. МЕРЧ -->
+            <div class="direction-card">
+                <div class="card-front">
+                    <img src="images/1.jpg" alt="Мерч">
+                    <h3>МЕРЧ</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Мерч и сувенирная продукция полного цикла</h4>
+                    <p>(идея, дизайн, производство, упаковка)</p>
+                    <h4 style="margin-top: 25px;">Корпоративная одежда под заказ</h4>
+                    <p>(лекала, образцы, тиражи)</p>
+                </div>
+            </div>
+
+            <!-- 2. ОДЕЖДА -->
+            <div class="direction-card">
+                <div class="card-front">
+                    <img src="images/2.jpg" alt="Одежда">
+                    <h3>ОДЕЖДА</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Производство одежды</h4>
+                    <p>(трикотаж и ткани любой сложности)</p>
+                </div>
+            </div>
+
+            <!-- 3. СУВЕНИРКА -->
+            <div class="direction-card">
+                <div class="card-front">
+                    <img src="images/3.jpg" alt="Сувенирка">
+                    <h3>СУВЕНИРКА</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Забудьте про блокноты, ручки и кружки.</h4>
+                    <p>Мы дарим колонки, проекторы, уютные пледы, дорожные рюкзаки и компактные дождевики — подарки, которыми действительно пользуются.</p>
+                </div>
+            </div>
+
+            <!-- 4. СТЕНДЫ -->
+            <div class="direction-card">
+                <div class="card-front">
+                    <img src="images/4.jpg" alt="Стенды">
+                    <h3>СТЕНДЫ</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Креатив для стендов</h4>
+                    <p>(концепция, визуальные решения)</p>
+                    <h4 style="margin-top: 25px;">Проектирование и застройка стендов</h4>
+                    <p>(дизайн, реализация)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cases" class="section section-dark">
+    <div class="container">
+        <h2 class="section-title"><span>02 //</span> КЕЙСЫ</h2>
+        
+        <div class="swiper casesSwiper">
+            <div class="swiper-wrapper">
+                <!-- Слайд 1 (с1) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="КОЛОНКА ЯНДЕКС «СВОИ»" 
+                     data-text="Брендированная умная колонка Яндекс в эксклюзивном кастомном исполнении с символикой «СВОИ». Поставляется в дизайнерской подарочной упаковке. Технологичный мерч, который идеально дополняет корпоративный стиль.">
+                    <img src="images/с1.jpeg" alt="КОЛОНКА ЯНДЕКС «СВОИ»">
+                </div>
+
+                <!-- Слайд 2 (с2) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ФОРМА ВТБ" 
+                     data-text="Спортивная форма для Матча звёзд ВТБ из премиального хлопка 250гр. Шелкография и хлопковый шеврон — детали, которые тоже играют.">
+                    <img src="images/с2.jpg" alt="ФОРМА ВТБ">
+                </div>
+
+                <!-- Слайд 3 (с3) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ЗОНТ «ДЕЛОВОЕ СОБРАНИЕ»" 
+                     data-text="Кастомный белый зонт-трость со сложным детализированным принтом по всей поверхности купола. Высокое качество сборки, надежная ветрозащита и яркая графика для деловых мероприятий.">
+                    <img src="images/с3.jpeg" alt="ЗОНТ «ДЕЛОВОЕ СОБРАНИЕ»">
+                </div>
+
+                <!-- Слайд 4 (с4) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ПОВЭРБЭНК «СВОИ»" 
+                     data-text="Портативный внешний аккумулятор в минималистичном белом корпусе с фирменным круглым нанесением «СВОИ» и удобной кожаной петлей. Стильный и полезный аксессуар, который всегда под рукой.">
+                    <img src="images/с4.jpeg" alt="ПОВЭРБЭНК «СВОИ»">
+                </div>
+
+                <!-- Слайд 5 (с5) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ВЕТРОВКА ВТБ" 
+                     data-text="Ветровка для Банка ВТБ из непродуваемой и водонепроницаемой ткани. Лёгкая и функциональная модель с капюшоном в двух цветах. Собирается в компактный мешок с авторским принтом. Жаккардовая бирка, сублимация на плече. Тираж — 330 штук. Практично. Компактно. Продумано до деталей.">
+                    <img src="images/с5.jpg" alt="ВЕТРОВКА ВТБ">
+                </div>
+
+                <!-- Слайд 6 (с6) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="КУРТКА «МОСКВА»" 
+                     data-text="На спине — Собор Василия Блаженного, вручную расшитый 7 000 бусинами. На рукавах — хохлома. 82 часа работы, которые стоят каждого взгляда.">
+                    <img src="images/с6.jpg" alt="КУРТКА «МОСКВА»">
+                </div>
+
+                <!-- Слайд 7 (с7) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="КАСТОМНЫЙ СПОРТ-ПАК" 
+                     data-text="Лампасы, фирменный паттерн, вышивка на груди и выверенная посадка. Когда спортивный стиль играет по своим правилам.">
+                    <img src="images/с7.jpg" alt="КАСТОМНЫЙ СПОРТ-ПАК">
+                </div>
+
+                <!-- Слайд 8 (с8) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="КРАСНЫЙ ПУХОВИК" 
+                     data-text="Красный пуховик с ПВХ-шевроном. Согревает так же уверенно, как выглядит.">
+                    <img src="images/с8.jpg" alt="КРАСНЫЙ ПУХОВИК">
+                </div>
+
+                <!-- Слайд 9 (с9) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="УШАНКА СБП" 
+                     data-text="Объемная ушанка с сублимацией для СБП. Тепло держит, внимание тоже.">
+                    <img src="images/с9.jpg" alt="УШАНКА СБП">
+                </div>
+
+                <!-- Слайд 10 (с10) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="СВЕТООТРАЖАЮЩИЙ ДОЖДЕВИК" 
+                     data-text="Дождевик из светоотражающей ткани со стильным принтом и ПВХ-шевроном. Видно издалека. И это комплимент.">
+                    <img src="images/с10.jpg" alt="СВЕТООТРАЖАЮЩИЙ ДОЖДЕВИК">
+                </div>
+
+                <!-- Слайд 11 (с11) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="КУРТКА «БОЛЬШОЙ ТЕАТР»" 
+                     data-text="На спине — Большой театр, балерина с объемной пачкой ручной работы и камнями, пришитыми вручную. Эксклюзивный кастом, улетающий на Филиппины.">
+                    <img src="images/с11.jpg" alt="КУРТКА «БОЛЬШОЙ ТЕАТР»">
+                </div>
+
+                <!-- Слайд 12 (файл с13) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ПУХОВИК «ДЮСПО»" 
+                     data-text="Пух внутри, дюспо снаружи. Всё, что нужно для тёплого впечатления.">
+                    <img src="images/с13.jpg" alt="ПУХОВИК «ДЮСПО»">
+                </div>
+
+                <!-- Слайд 13 (файл с14) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ФИРМЕННОЕ ХУДИ 350Г" 
+                     data-text="Худи из футера пенье 350 г/м² с 3D-вышивкой. Тепло, объемно, по-фирменному.">
+                    <img src="images/с14.png" alt="ФИРМЕННОЕ ХУДИ 350Г">
+                </div>
+
+                <!-- Слайд 14 (файл с15) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ДОЖДЕВИК «DTF»" 
+                     data-text="Китайская плёнка, ультразвуковая спайка и холодный DTF. Прозрачно, практично, по погоде.">
+                    <img src="images/с15.jpg" alt="ДОЖДЕВИК «DTF»">
+                </div>
+
+                <!-- Слайд 15 (файл с16) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="ЧЕХОЛ ДЛЯ РАКЕТКИ" 
+                     data-text="Чехол для теннисной ракетки с персонализацией. Because good gear loves its name.">
+                    <img src="images/с16.jpg" alt="ЧЕХОЛ ДЛЯ РАКЕТКИ">
+                </div>
+
+                <!-- Слайд 16 (файл с17) -->
+                <div class="swiper-slide case-slide" 
+                     data-title="РУБАШКА 2ГИС" 
+                     data-text="Рубашка из 100% хлопка с 3D-вышивкой на спине. Для тех, кто всегда знает, куда идти.">
+                    <img src="images/с17.jpg" alt="РУБАШКА 2ГИС">
+                </div>
+            </div>
+
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-prev custom-prev"></div>
+            <div class="swiper-button-next custom-next"></div>
+        </div>
+    </div>
+</section>
+
+<section id="tech" class="section">
+    <div class="container">
+        <h2 class="section-title"><span>03 //</span> НАНЕСЕНИЕ</h2>
+        
+        <div class="tech-grid">
+            <!-- Тип 1 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т2.jpg" alt="Тафтинг">
+                    <div class="tech-overlay">
+                        <p>Технология нанесения ворса на ткань с помощью специального пистолета. Прошивка нитей создает мягкую, объемную и приятную на ощупь текстуру. Метод идеально подходит для создания кастомных элементов одежды, уникальных ковров, панно и декоративных изделий с детализированным индивидуальным дизайном.</p>
+                    </div>
+                </div>
+                <div class="tech-title">Тафтинг</div>
+            </div>
+
+            <!-- Тип 2 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т5.jpg" alt="DTF-печать">
+                    <div class="tech-overlay">
+                        <p>Современный метод нанесения ярких и стойких принтов высокой детализации на любые виды одежды. Технология позволяет использовать классическое нанесение, объемные Puff-эффекты, глиттерные, металлизированные и флуоресцентные пленки.</p>
+                    </div>
+                </div>
+                <div class="tech-title">DTF-печать</div>
+            </div>
+
+            <!-- Тип 3 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т4.jpg" alt="Эмбосинг">
+                    <div class="tech-overlay">
+                        <p>Технология создания трехмерного рельефного изображения за счет термического тиснения ткани под давлением. Позволяет получить стильную фактуру и четкие контуры без использования нитей. Отлично подходит для лаконичного нанесения логотипов на худи.</p>
+                    </div>
+                </div>
+                <div class="tech-title">Эмбосинг</div>
+            </div>
+            
+            <!-- Тип 4 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т3.jpg" alt="3D-вышивка">
+                    <div class="tech-overlay">
+                        <p>Метод объемной машинной вышивки с использованием специального вспененного материала под нитями. Элементы дизайна заметно приподнимаются над поверхностью ткани, создавая выразительный и долговечный рельеф.</p>
+                    </div>
+                </div>
+                <div class="tech-title">3D-вышивка</div>
+            </div>
+            
+            <!-- Тип 5 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т6.jpg" alt="Флекстран">
+                    <div class="tech-overlay">
+                        <p>Высокотехнологичный метод переноса плотных объемных элементов и логотипов с максимальной прочностью фиксации на ткани. Обеспечивает безупречную четкость линий, устойчивость к износу и многочисленным стиркам.</p>
+                    </div>
+                </div>
+                <div class="tech-title">Флекстран</div>
+            </div>
+            
+            <!-- Тип 6 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т1.jpeg" alt="Вышивка">
+                    <div class="tech-overlay">
+                        <p>Иголка, нитка и немного магии. Ручная вышивка превращает обычную вещь в ту, с которой не хочется расставаться. Каждый элемент кропотливо прорабатывается мастером, что гарантирует абсолютную уникальность.</p>
+                    </div>
+                </div>
+                <div class="tech-title">Вышивка</div>
+            </div>
+
+            <!-- Тип 7 -->
+            <div class="tech-card">
+                <div class="tech-img-wrapper">
+                    <img src="images/т7.jpg" alt="Одежда"> <!-- Добавь эту картинку -->
+                    <div class="tech-overlay">
+                        <p>Мы самостоятельно разрабатываем профессиональные лекала с нуля, шьем изделия на собственном производстве и воплощаем в жизнь самые смелые концепты. Беремся за задачи любой сложности.</p>
+                    </div>
+                </div>
+                <div class="tech-title">Одежда</div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats-grid">
+            <div class="stat-item"><div class="stat-number">100%</div><div class="stat-text">контроль<br>качества</div></div>
+            <div class="stat-item"><div class="stat-number">20+</div><div class="stat-text">технологий<br>нанесения</div></div>
+            <div class="stat-item"><div class="stat-number">1000+</div><div class="stat-text">реализованных<br>изделий</div></div>
+            <div class="stat-item"><div class="stat-number">7 дней</div><div class="stat-text">средний срок<br>производства</div></div>
+            <div class="stat-item"><div class="stat-number">10 лет</div><div class="stat-text">опыт<br>работы</div></div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section section-dark">
+    <div class="container about-container">
+        <div class="about-content">
+            <h2 class="section-title" style="text-align: left;"><span>04 //</span> О НАС</h2>
+            <div class="about-text">
+                <p>Мы не любим делать «обычный мерч». Потому что обычного и без нас хватает. Нам интереснее придумать вещь, которую захочется носить каждый день.</p>
+                <p>Мы соединяем идеи, дизайн и производство в одном месте. Без бесконечных посредников, потерянных правок и фразы «это не к нам».</p>
+                <p>Любим нестандартные задачи, необычные материалы и моменты, когда заказчик говорит: «Вот именно так мы и хотели».</p>
+            </div>
+            <h3 class="about-subtitle">Собственное<br>производство в Москве</h3>
+        </div>
+        <div class="about-image">
+            <img src="images/IMG_2843.jpg" alt="Собственное производство в Москве">
+        </div>
+    </div>
+</section>
+
+<!-- Попап для кейсов -->
+<div class="popup-overlay" id="casePopup">
+    <div class="popup-content case-popup-content">
+        <button class="popup-close" id="closePopup">&times;</button>
+        <div class="popup-img-wrap">
+            <img src="" alt="" id="popupImage" class="popup-img">
+        </div>
+        <h4 id="popupTitle"></h4>
+        <p id="popupText"></p>
+    </div>
+</div>
+<!-- Попап «Есть идея?» (Заказать мерч) -->
+<div class="popup-overlay" id="orderPopup">
+    <div class="popup-content order-popup-content">
+        <button class="popup-close" id="closeOrderPopup">&times;</button>
+        <h3 class="popup-idea-title">Есть идея?</h3>
+        <p class="popup-idea-text">Мы уже думаем, как её сделать. Пишите. Остальное возьмём на себя.</p>
+        
+        <div class="popup-buttons">
+            <a href="https://t.me/proekt_588" target="_blank" class="popup-btn btn-dark">Написать в Telegram</a>
+            <a href="https://max.ru/c/-73628212227436/AZ2gfNruQyw" target="_blank" class="popup-btn btn-white">Написать в MAX</a>
+            <a href="tel:+79100081812" class="popup-btn btn-pink-action">Позвонить: +7 (910) 008-18-12</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
